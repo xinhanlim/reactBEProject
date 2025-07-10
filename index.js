@@ -9,6 +9,10 @@ app.use(cors());
 
 const pool = require('./database');
 
+const productRouter = require('./routes/products');
+
+app.use('/api/products', productRouter);
+
 app.get('/', (req,res) => {
     res.json( {
         "messsage" : "hello world"
