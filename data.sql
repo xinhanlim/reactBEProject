@@ -9,8 +9,6 @@ INSERT INTO products (name, price, image) VALUES
 
 -- Insert sample users
 INSERT INTO users (name, email, password, salutation, country) VALUES
-('Alice Tan', 'alice@example.com', 'hashedpassword1', 'Ms', 'Singapore'),
-('Bob Lee', 'bob@example.com', 'hashedpassword2', 'Mr', 'Malaysia'),
 ('Charlie Lim', 'charlie@example.com', 'hashedpassword3', 'Mr', 'Indonesia');
 
 -- Insert marketing preferences
