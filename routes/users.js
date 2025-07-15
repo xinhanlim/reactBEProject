@@ -50,6 +50,7 @@ res.status(400).json({
 router.put('/me', AuthenticateWithJwt, async (req,res) =>{
     const userId = req.userId;
     const userDetails = req.body;
+    console.log("🛠️ Received user update:", userDetails);
 
     try{    
         await userServiceLayer.updateUserDetails(userId, userDetails);
@@ -57,6 +58,7 @@ router.put('/me', AuthenticateWithJwt, async (req,res) =>{
             "message" : "Update Successfull"
         })
     }catch (e) {
+        console.error("❌ Error updating user:", e);
         res.status(400).json({
             error: e,
             "message": "failed to update user profile"

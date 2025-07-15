@@ -39,8 +39,14 @@ async function loginUser(email,password){
 }
 
 async function updateUserDetails(id, userDetails){
-        const {name, email,
-            marketing_preferences, country} = userDetails
+    const {
+        name,
+        email,
+        salutation,
+        country,
+        marketingPreferences 
+      } = userDetails;
+    
     
         if (!name || name === null) {
             throw new Error("Name is required");
@@ -50,7 +56,7 @@ async function updateUserDetails(id, userDetails){
             throw new Error("Invalid email address");
         }
         
-        if (!marketing_preferences || !Array.isArray(marketing_preferences) || marketing_preferences.length === 0) {
+        if (! marketingPreferences || !Array.isArray(marketingPreferences) || marketingPreferences.length === 0) {
             throw new Error("Please select at least one marketing preference");
         }
     
