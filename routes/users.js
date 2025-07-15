@@ -97,4 +97,18 @@ router.get('/me', AuthenticateWithJwt, async (req,res) => {
         })
     }
 })
+
+router.delete('/me', AuthenticateWithJwt, async(req,res)=>{
+    try{
+        await userServiceLayer.deleteUserById(req.userId);
+        res.json({
+            "message":"User has been deleted"
+        })
+    } catch (e) {
+        console.log(e);
+        res.status(400).json({
+            "message":"unable to delete"
+        })
+    }
+})
 module.exports = router;

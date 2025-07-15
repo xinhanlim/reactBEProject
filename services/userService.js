@@ -73,9 +73,14 @@ async function getUserDetailsById(id){
     return user;
 }
 
+async function deleteUserById(id){
+    return await userDataLayer.deleteUser(id);
+}
+
 module.exports = {
     registerUser,
     loginUser,
     updateUserDetails,
-    getUserDetailsById
+    getUserDetailsById,
+    deleteUserById
 }

@@ -105,17 +105,18 @@ async function updateUser(id, {name, email, salutation,marketing_preferences, co
  }
 }
 
-async function deleteUser(){
+async function deleteUser(id){
+    const connection = await pool.getConnection();
     try{
-        const connection = await pool.getConnection();
         await connection.beginTransaction();
 
         await connection.query(`DELETE FROM user_marketing_preferences WHERE user_id = ? `, [id])
-        await connection.query(`DELETE FROM users WHERE user_id = ? `, [id])
+        await connection.query(`DELETE FROM users WHERE id = ? `, [id])
   
         await connection.commit();
-    } catch {
+    } catch (error) {
         await connection.rollback();
+        throw error;
     } finally {
         connection.release();
     } 
