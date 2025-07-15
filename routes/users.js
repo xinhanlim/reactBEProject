@@ -49,8 +49,22 @@ res.status(400).json({
 
 router.put('/me', AuthenticateWithJwt, async (req,res) =>{
     const userId = req.userId;
-    const userDetails = req.body;
-    console.log("🛠️ Received user update:", userDetails);
+    const {
+        name,
+        email,
+        salutation,
+        country,
+        marketingPreferences
+      } = req.body;
+      
+      const userDetails = {
+        name,
+        email,
+        salutation,
+        country,
+        marketing_preferences: marketingPreferences
+      };
+     console.log("🛠️ Received user update:", userDetails);
 
     try{    
         await userServiceLayer.updateUserDetails(userId, userDetails);

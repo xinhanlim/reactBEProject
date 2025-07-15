@@ -44,7 +44,7 @@ async function updateUserDetails(id, userDetails){
         email,
         salutation,
         country,
-        marketingPreferences 
+        marketing_preferences
       } = userDetails;
     
     
@@ -56,7 +56,7 @@ async function updateUserDetails(id, userDetails){
             throw new Error("Invalid email address");
         }
         
-        if (! marketingPreferences || !Array.isArray(marketingPreferences) || marketingPreferences.length === 0) {
+        if (!marketing_preferences || !Array.isArray(marketing_preferences) || marketing_preferences.length === 0) {
             throw new Error("Please select at least one marketing preference");
         }
     

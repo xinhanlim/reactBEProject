@@ -105,8 +105,6 @@ async function updateUser(id, {name, email, salutation,marketing_preferences, co
  }
 }
 
-  
-
 async function deleteUser(){
     try{
         const connection = await pool.getConnection();
