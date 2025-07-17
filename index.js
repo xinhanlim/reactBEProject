@@ -10,10 +10,13 @@ app.use(cors());
 const pool = require('./database');
 
 const productRouter = require('./routes/products');
-const userRouter = require('./routes/users')
+const userRouter = require('./routes/users');
+const cartRouter = require('./routes/cart');
 
 app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
+app.use('/api/cart', cartRouter);
+
 
 app.get('/', (req,res) => {
     res.json( {
