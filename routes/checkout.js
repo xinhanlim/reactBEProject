@@ -7,6 +7,7 @@ const checkoutService = require('../services/checkoutService');
 router.post('/', AuthenticateWithJWT, async function(req, res){
     try{
         const session = await checkoutService.checkout(req.userId);
+        res.json(session);
     } catch (e){
         console.log(e);
         res.status(500).json({

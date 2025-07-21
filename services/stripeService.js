@@ -8,7 +8,7 @@ function createLineItems(orderItems){
                 'currency':'sgd',
                 'product_data':{
                     name: item.product_name,
-                    imags:[item.image_url || "https://placehold.co/400"],
+                    images:[item.image_url || "https://placehold.co/400"],
                     metadata: {
                         product_id: item.product_id
                     }
