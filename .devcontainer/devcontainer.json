@@ -7,7 +7,7 @@
 	"forwardPorts": [3000, 3306],
 
 	// Example: Run npm install automatically
-	"postCreateCommand": "npm install",
+	"postCreateCommand": "npm install"
 
 	// Uncomment if you want to customize VS Code settings/extensions here
 	// "customizations": {
