@@ -35,6 +35,10 @@ STRIPE_PUBLISHABLE_KEY = <your_stripe_key>
 
 3) Create the database & import schema
 ```bash
+
+# Allow execution permission to .sh file 
+`chmod +x ./runmysql.sh`
+
 # Create DB (ignore if exists)
 mysql -u root -pmariadb -h 127.0.0.1 --ssl=0 -ecommerce  # "CREATE DATABASE IF NOT EXISTS ecommerce;"
 
@@ -49,6 +53,7 @@ mysql -u root -pmariadb -h 127.0.0.1 --ssl=0 ecommerce < data.sql
 Quick-check: (inside the mysql shell)
 
 ```bash
+./runmysql.sh;
 USE ecommerce;
 SHOW TABLES;
 SELECT * FROM products LIMIT 5;
