@@ -1,1 +1,1 @@
-mysql -u root -pmariadb -h 127.0.0.1
+mysql -u root -pmariadb -h 127.0.0.1 --ssl=0
