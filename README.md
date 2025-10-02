@@ -61,12 +61,12 @@ SELECT * FROM products LIMIT 5;
 
 4) Run Commands:
 
-nodemon
+`nodemon`
 
 
 ## Screenshot
 
-![img](images/porject2image.jpg)
-![img](images/porject2image.2.jpg)
-![img](images/porject2image.3.jpg)
-![img](images/porject2image.4.jpg)
+![img](images/porject2image.png)
+![img](images/porject2image.2.png)
+![img](images/porject2image.3.png)
+![img](images/porject2image.4.png)
