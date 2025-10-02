@@ -28,8 +28,8 @@ async function createCheckoutSession(userId, orderItems, orderId){
             payment_method_types:['card'],
             line_items:lineItems,
             mode:"payment",
-            success_url: "https://www.google.com",
-            cancel_url:"https://www.yahoo.com",
+            success_url: "https://symmetrical-potato-5gx77g6p94rph5pw-5173.app.github.dev",
+            cancel_url:"https://symmetrical-potato-5gx77g6p94rph5pw-5173.app.github.dev",
             metadata:{
                 'userId': userId,
                 'orderId': orderId
