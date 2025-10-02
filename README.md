@@ -8,6 +8,11 @@
 - Responsive UI for mobile web view
 - User authentication with JWT-based login 
 
+## Tech Stack:
+Frontend: React, Wouter, Jotai, Axios, Formik, Yup,
+Backend: Node.js, Express, Mysql/Promise, JWT, bcrypt, CORS
+Dev & Build: Vite, Nodemon
+
 
 
 
