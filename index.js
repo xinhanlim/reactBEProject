@@ -18,6 +18,7 @@ app.use('/api/cart', cartRouter);
 app.use('/api/checkout', checkoutRouter);
 
 
+
 app.get('/', (req,res) => {
     res.json( {
         "messsage" : "hello world"
