@@ -1,5 +1,5 @@
 # Ecommerce — Back-end Assignment
-- Back-end ecommerce using MySQL 
+- Node.js + Express RESTFUL API backed by MySQL/MariaDB (via mysql2/promise).
 - Front-end: https://github.com/xinhanlim/workoutDroplist-FE
 
 ## Features:
@@ -9,20 +9,15 @@
 - User authentication with JWT-based login 
 
 ## Tech Stack:
-Frontend: React, Wouter, Jotai, Axios, Formik, Yup,
-Backend: Node.js, Express, Mysql/Promise, JWT, bcrypt, CORS
-Dev & Build: Vite, Nodemon
+- Frontend: React, Wouter, Jotai, Axios, Formik, Yup
 
+- Backend: Node.js, Express, `Mysql2/Promise` , JWT, bcrypt, CORS
 
+- Dev & Build: Vite, Nodemon
 
-
-
-
-
-
-# mysql-codespace-devcontainer
-
-## Using codespace
+## Getting Started:
+``` bash
+###  Using codespace
 To login into the database, use `mysql -u root -pmariadb -h 127.0.0.1`
 
 ## Allow execution permission to .sh file
@@ -30,6 +25,15 @@ To login into the database, use `mysql -u root -pmariadb -h 127.0.0.1`
 
 ## Starting Up
 nodemon index.js
+```
+
+
+
+
+
+
+
+
 
 ### Environment Variables
 Create a .env file (example below). Never commit secrets.
