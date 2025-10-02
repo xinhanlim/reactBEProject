@@ -1,3 +1,20 @@
+# Ecommerce — Back-end Assignment
+- Back-end ecommerce using MySQL 
+- Front-end: https://github.com/xinhanlim/workoutDroplist-FE
+
+## Features:
+- Full `CRUD` functionality for `shopping cart` & `users`
+- `Automated calculation` of `currency` when items quantity changes in cart
+- Responsive UI for mobile web view
+- User authentication with JWT-based login 
+
+
+
+
+
+
+
+
 # mysql-codespace-devcontainer
 
 ## Using codespace
