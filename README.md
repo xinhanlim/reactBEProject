@@ -66,7 +66,7 @@ SELECT * FROM products LIMIT 5;
 
 ## Screenshot
 
-![img](images/porject2image.png)
-![img](images/porject2image.2.png)
-![img](images/porject2image.3.png)
-![img](images/porject2image.4.png)
+![img](images/project2image.png)
+![img](images/project2image.2.png)
+![img](images/project2image.3.png)
+![img](images/project2image.4.png)
