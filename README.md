@@ -28,7 +28,7 @@ DB_USER =root
 DB_PASSWORD =mariadb
 DB_NAME =ecommerce
 PORT =3000
-JWT_SECRET = <your_JWT_secret
+JWT_SECRET = <your_JWT_secret>
 STRIPE_SECRET_KEY = <your_stripe_key>
 STRIPE_PUBLISHABLE_KEY = <your_stripe_key>
 ```
@@ -50,7 +50,7 @@ mysql -u root -pmariadb -h 127.0.0.1 --ssl=0 ecommerce < data.sql
 
 ```
 
-Quick-check: (inside the mysql shell)
+### Quick-check: (inside the mysql shell)
 
 ```bash
 ./runmysql.sh;
@@ -60,37 +60,13 @@ SELECT * FROM products LIMIT 5;
 ```
 
 4) Run Commands:
+
 nodemon
 
 
+## Screenshot
 
-
-
-
-
-
-
-
-
-
-``` bash
-###  Using codespace
-To login into the database, use `mysql -u root -pmariadb -h 127.0.0.1 --ssl=0`
-
-## Allow execution permission to .sh file
-`chmod +x ./runmysql.sh`
-
-## Starting Up
-nodemon index.js
-```
-
-
-
-
-
-
-
-
-
-### Environment Variables
-Create a .env file (example below). Never commit secrets.
+![img](images/porject2image.jpg)
+![img](images/porject2image.2.jpg)
+![img](images/porject2image.3.jpg)
+![img](images/porject2image.4.jpg)
