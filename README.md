@@ -23,7 +23,7 @@
 ## Getting Started:
 1) Clone & install
 ```bash
-git clone https://github.com/<you>/reactBEProject.git
+git clone https://github.com/xinhanlim/reactBEProject.git
 cd reactBEProject
 ```
 2) Environment variables
