@@ -77,11 +77,11 @@ SELECT * FROM products LIMIT 5;
 
 ## Lessson Learn:
 
-### `getConnection()` & `await connection.beginTransaction();`
+### 1. `getConnection()` & `await connection.beginTransaction();`
 - `use connection.beginTransaction()` when calling out multiple SQL queries as one single operation, and if anything goes wrong halfway, undo everything.”
 - following which `await connection.commit()` to commit the queries
 - and in the `finally` part rollback it back if anything wrong happens
 
-### why some need `getConnection()` some just `query` ? 
+### 2. Why some need `getConnection()` some just `query` ? 
 - if just a single operation, query is enough,
 - but if there's multiple sql queries then you have to `getConnection()` and then `beginTransaction`
