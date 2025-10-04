@@ -15,6 +15,11 @@
 
 - Dev & Build: Vite, Nodemon
 
+## Schematic Diagram
+
+![Schematic Diagram](images/sqlschematic.png)
+
+
 ## Getting Started:
 1) Clone & install
 ```bash
