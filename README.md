@@ -9,7 +9,7 @@
 - User authentication with JWT-based login 
 
 ## Tech Stack:
-- Frontend: React, Wouter, Jotai, Axios, Formik, Yup
+- Frontend: React, Wouter, Jotai, Axios, Formik, Yup, Boostrap
 
 - Backend: Node.js, Express, `Mysql2/Promise` , JWT, bcrypt, CORS, Stripe
 
